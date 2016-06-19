@@ -28,8 +28,8 @@ Content
         broadcast 192.168.15.255
         gateway 192.168.15.1
 
-   <sup>*</sup> The `interface-name` can be found in `ifconfig -a` and now I connected the network cable to the interface `enp0s25`.
-   <sup>*</sup> The DHCP mode works properly but the STATIC can work only for one server. If I set one server as `address 192.168.15.101` and anther one as `address 192.168.15.102`, the server with `address 192.168.15.102` cannot access internet service. 
+   - The `interface-name` can be found in `ifconfig -a` and now I connected the network cable to the interface `enp0s25`.
+   - The DHCP mode works properly but the STATIC can work only for one server. If I set one server as `address 192.168.15.101` and anther one as `address 192.168.15.102`, the server with `address 192.168.15.102` cannot access internet service. 
 
 3. Finally, we need to execute `sudo service networking restart`. 
 
@@ -56,7 +56,7 @@ ________________________________________________________________________________
 4. Edit as the line `127.0.1.1        {the hostname same as /etc/hostname}`.
 5. `sudo reboot`: Reboot the server. If we don't reboot it, "sudo" keyword does not work.
 
-<sup>*</sup> Reference: 
+- Reference: 
    1. http://ubuntuhandbook.org/index.php/2014/04/change-hostname-ubuntu1404/
    2. http://askubuntu.com/questions/87665/how-do-i-change-the-hostname-without-a-restart
 
