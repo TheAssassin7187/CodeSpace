@@ -13,17 +13,23 @@ Content
 ### Connect to the Local Network
 1. `sudo vi /etc/network/interfaces`: Use vi to edit the `interfaces` file.
 
-2. There is two different method to connect to the network, DHAP and STATIC.
+2. There is two different method to connect to the network, DHCP and STATIC.
 
-        # For HDAP
+        # For DHCP
         auto {interface-name}
-        iface {interface-name} inet dhap
+        iface {interface-name} inet dhcp
         
         # For STATIC
         auto {interface-name}
         iface {interface-name} inet static
+        address 192.168.15.1{00-49}
+        network 192.168.15.0
+        netmask 255.255.255.0
+        broadcast 192.168.15.255
+        gateway 192.168.15.1
 
    <sup>*</sup> The `interface-name` can be found in `ifconfig -a` and now I connected the network cable to the interface `enp0s25`.
+   <sup>*</sup> The DHCP mode works properly but the STATIC can work only for one server. If I set one server as `address 192.168.15.101` and anther one as `address 192.168.15.102`, the server with `address 192.168.15.102` cannot access internet service. 
 
 3. Finally, we need to execute `sudo service networking restart`. 
 
