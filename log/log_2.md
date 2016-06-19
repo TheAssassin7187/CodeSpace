@@ -11,9 +11,9 @@ Content
 -------------------------------------------
 
 ### Connect to the Local Network
-1. Use vi to edit the `interfaces` file, `sudo vi /etc/network/interfaces`.
+(1). Use vi to edit the `interfaces` file, `sudo vi /etc/network/interfaces`.
 
-2. There is two different method to connect to the network, DHAP and STATIC.
+(2). There is two different method to connect to the network, DHAP and STATIC.
 
         # For HDAP
         auto {interface-name}
@@ -25,7 +25,7 @@ Content
 
 <sup>*</sup> The `interface-name` can be found in `ifconfig -a` and now I connected the network cable to the interface `enp0s25`.
 
-3. Finally, we need to execute `sudo service networking restart`. 
+(3). Finally, we need to execute `sudo service networking restart`. 
 
 
 ### Installing openLDAP
