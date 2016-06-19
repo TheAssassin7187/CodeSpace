@@ -10,8 +10,6 @@ LOG 2 - Setting the Network Connection
 Content
 -------------------------------------------
 
-____________________________________________________________________________________
-
 ### Connect to the Local Network
 1. `sudo vi /etc/network/interfaces`: Use vi to edit the `interfaces` file.
 
