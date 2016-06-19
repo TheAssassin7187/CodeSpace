@@ -9,6 +9,22 @@ LOG 2 - Setting the Network Connection
 
 Content
 -------------------------------------------
+### Configuration Information about the Router
+
+| Attribute                     | Information    |
+| :---------------------------- | :------------- |
+| IP Mode                       | 158.132.209.2  |
+| Subnet Mask                   | 255.255.255.0  |
+| Gateway                       | 158.132.209.28 |
+| Static DNS 1                  | 158.132.14.1   |
+| Static DNS 2                  | 158.132.18.1   |
+| Router Name                   | RT41-BU        |
+| Local IP Address              | 192.168.15.1   |
+| Subnet Mask (Local)           | 255.255.255.0  |
+| DHCP Server                   | Enabled        |
+| Starting IP Address           | 192.168.15.100 |
+| Maximum Number of DHCP Users  | 50             |
+
 
 ### Connect to the Local Network
 1. `sudo vi /etc/network/interfaces`: Use vi to edit the `interfaces` file.
