@@ -2,6 +2,8 @@
 Attribute | Informaiton
 --------- | -----------
 Hostname  | ldap_01
+Root User | casper
+Password  | A102995e+
 
 ________________________________________________
 
@@ -9,6 +11,8 @@ ________________________________________________
 Attribute | Informaiton
 --------- | -----------
 Hostname  | ldap_02
+Root User | casper
+Password  | A102995e+
 
 ________________________________________________
 ### Server_03
