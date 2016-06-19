@@ -23,16 +23,16 @@ Content
         auto {interface-name}
         iface {interface-name} inet static
 
-// The interface name can be found in "ifconfig -a" and now I connected the interface "enp0s25"
-3. edit to use
-4. finally, sudo service networking restart 
+<sup>*</sup> The `interface-name` can be found in `ifconfig -a` and now I connected the network cable to the interface `enp0s25`.
+
+3. Finally, we need to execute `sudo service networking restart`. 
 
 
+### Installing openLDAP
 
-install openldap
-1. sudo apt-get update
-2. sudo apt-get install slapd ldap-utils
-3. the password for both pcs are set to "awe1829"
+1. `sudo apt-get update`
+2. `sudo apt-get install slapd ldap-utils`
+3. The password for both `ldap_01` and `ldap_02` are set to be `awe1829`.
 
 
 
