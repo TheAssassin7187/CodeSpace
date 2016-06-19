@@ -62,22 +62,18 @@ ________________________________________________________________________________
 
 ____________________________________________________________________________________
 
-Problem
-1. After change the hostname to "ldap_01.codespace.com    ldap_01" 
-2. During reboot, "Failed to start LXD".
-P. what is LXD can be found in : http://www.ubuntu.com/cloud/lxd
-it seems only appears on Ubuntu 16.04
+### Fail to Start LXD Service
 
-____________________________________________________________________________________
+1. After changed the hostname to `ldap_01.codespace.com    ldap_01`, the error message `Failed to start LXD` appears during bootup.
+2. I found what is LXD in: http://www.ubuntu.com/cloud/lxd. It seems that the problem only appears on Ubuntu 16.04 after a update.
+3. I tried to change back the hostname to the previous one but the problem seems not completely solved but I can boot up the server os quicker.
 
-Enter the recovery mode
-1. hold "shift"
-2. repeatly press "esc" to go to "GNU GRUB"
-2.1. Advanced options for Ubuntu
-2.2. "..........recovery mode"
-3. after enter the recovery mode, enter the mode "root"
-4. the filesystem is mounted readonly by default. That means that I won't be able to save any changes you make to any files - and also that vim won't be able to write to root's .viminfo file.
-5. type "mount -o remount,rw /"
+#### Enter the recovery mode
+1. Hold <kbd>Shift</kbd> and repeatly press <kbd>Esc</kbd> to go into `GNU GRUB` screen.
+2. Select the `Advanced options for Ubuntu` and then select `..........recovery mode`.
+3. After entering the recovery mode, enter the mode `root`.
+4. The filesystem is mounted readonly by default. That means that I won't be able to save any change I make to any files and also that vim won't be able to write to root's `.viminfo` file.
+5. Type `mount -o remount,rw /` to get the permission to write to the file in the system.
 
 ____________________________________________________________________________________
 
