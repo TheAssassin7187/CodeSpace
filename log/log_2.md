@@ -10,22 +10,19 @@ LOG 2 - Setting the Network Connection
 Content
 -------------------------------------------
 
-### 123
+### Connect to the Local Network
+1. Use vi to edit the `interfaces` file, `sudo vi /etc/network/interfaces`.
 
-### 123
+2. There is two different method to connect to the network, DHAP and STATIC.
 
-### 123
+        # For HDAP
+        auto {interface-name}
+        iface {interface-name} inet dhap
+        
+        # For STATIC
+        auto {interface-name}
+        iface {interface-name} inet static
 
-Log 02
-
-
-connect the network
-1. sudo vi /etc/network/interfaces
-2. edit to use DHAP
-------------------------------------
-auto {interface-name}
-iface {interface-name} inet dhap
-------------------------------------
 // The interface name can be found in "ifconfig -a" and now I connected the interface "enp0s25"
 3. edit to use
 4. finally, sudo service networking restart 
