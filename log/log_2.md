@@ -57,7 +57,7 @@ ________________________________________________________________________________
         gateway 192.168.15.1
 
    - The `interface-name` can be found in `ifconfig -a` and now I connected the network cable to the interface `enp0s25`.
-   - The DHCP mode works properly but the STATIC can work only for one server. If I set one server as `address 192.168.15.101` and anther one as `address 192.168.15.102`, the server with `address 192.168.15.102` cannot access internet service. 
+   - **[Problem]** The DHCP mode works properly but the STATIC can work only for one server. If I set one server as `address 192.168.15.101` and anther one as `address 192.168.15.102`, the server with `address 192.168.15.102` cannot access internet service. 
 
 3. Finally, we need to execute `sudo service networking restart`. 
 
@@ -67,7 +67,7 @@ ________________________________________________________________________________
 
 1. `sudo apt-get update`
 2. `sudo apt-get install slapd ldap-utils`
-3. The password for both `ldap_01` and `ldap_02` are set to be `awe1829`.
+3. The password for both `ldap_01` and `ldap_02` are set to be **`awe1829`**.
 
 ____________________________________________________________________________________
 
