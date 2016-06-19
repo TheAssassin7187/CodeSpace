@@ -1,4 +1,4 @@
-Configuration Information
+Server Configuration Information
 =================================================
 
 ### Server_01
