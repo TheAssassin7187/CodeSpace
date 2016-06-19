@@ -10,10 +10,12 @@ LOG 2 - Setting the Network Connection
 Content
 -------------------------------------------
 
-### Connect to the Local Network
-(1). Use vi to edit the `interfaces` file, `sudo vi /etc/network/interfaces`.
+____________________________________________________________________________________
 
-(2). There is two different method to connect to the network, DHAP and STATIC.
+### Connect to the Local Network
+1. `sudo vi /etc/network/interfaces`: Use vi to edit the `interfaces` file.
+
+2. There is two different method to connect to the network, DHAP and STATIC.
 
         # For HDAP
         auto {interface-name}
@@ -23,10 +25,11 @@ Content
         auto {interface-name}
         iface {interface-name} inet static
 
-<sup>*</sup> The `interface-name` can be found in `ifconfig -a` and now I connected the network cable to the interface `enp0s25`.
+   <sup>*</sup> The `interface-name` can be found in `ifconfig -a` and now I connected the network cable to the interface `enp0s25`.
 
-(3). Finally, we need to execute `sudo service networking restart`. 
+3. Finally, we need to execute `sudo service networking restart`. 
 
+____________________________________________________________________________________
 
 ### Installing openLDAP
 
@@ -36,18 +39,22 @@ Content
 
 
 
-How to change the hostname 
-(http://ubuntuhandbook.org/index.php/2014/04/change-hostname-ubuntu1404/, 
-http://askubuntu.com/questions/87665/how-do-i-change-the-hostname-without-a-restart)
-1. sudo vi /etc/hostname // This file only contain the host name.
-2. change the hostname and save
-3. sudo vi /etc/hosts
-4. edit as "127.0.1.1        {the host name same as /etc/hostname}"
-5. sudo reboot //If don't reboot, "sudo" keyword does not work
+### Changing the Hostname 
 
-Not permanient method (end)
-sudo hostname {new-hostname}
-// this can be used to test the new host
+#### Non-permanient Method
+`sudo hostname {hostname}`: this can be used to test the new hostname whether is proper.
+
+#### Permanient Method
+
+1. `sudo vi /etc/hostname`: This file only contain the host name.
+2. Change the hostname and save the file `/etc/hostname`.
+3. `sudo vi /etc/hosts`
+4. Edit as the line `127.0.1.1        {the hostname same as /etc/hostname}`.
+5. `sudo reboot`: Reboot the server. If we don't reboot it, "sudo" keyword does not work.
+
+<sup>*</sup> Reference: 
+   1. http://ubuntuhandbook.org/index.php/2014/04/change-hostname-ubuntu1404/
+   2. http://askubuntu.com/questions/87665/how-do-i-change-the-hostname-without-a-restart
 
 
 
