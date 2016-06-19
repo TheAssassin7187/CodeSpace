@@ -124,8 +124,9 @@ ________________________________________________________________________________
 
 ### Changed the Hostname for LDAP Setup
 1. `sudo vi /etc/hosts`
-2. `127.0.1.1    ldap_02` --> `127.0.1.1    ldap_02.codespace.com ldap_02`
-3. The file `/etc/hostname` is not required to changed
+2. `127.0.1.1    ldap_01` --> `127.0.1.1    ldap_01.codespace.com ldap_01` : for server_01
+3. `127.0.1.1    ldap_02` --> `127.0.1.1    ldap_02.codespace.com ldap_02` : for server_01
+4. The file `/etc/hostname` is not required to changed
 
 - Reference:
-  1. Setting Up openLDAP Server (https://www.youtube.com/watch?v=m_prB_2Pxwk)
+  1. Setting Up openLDAP Server ( https://www.youtube.com/watch?v=m_prB_2Pxwk )
