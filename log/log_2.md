@@ -57,7 +57,7 @@ ________________________________________________________________________________
         gateway 192.168.15.1
 
    - The `interface-name` can be found in `ifconfig -a` and now I connected the network cable to the interface `enp0s25`.
-   - **[Problem]** The DHCP mode works properly but the STATIC can work only for one server. If I set one server as `address 192.168.15.101` and anther one as `address 192.168.15.102`, the server with `address 192.168.15.102` cannot access internet service. 
+   - **[Problem]** The DHCP mode works properly but the STATIC can work only for one server. If I set one server as `address 192.168.15.101` and anther one as `address 192.168.15.102`, the server with `address 192.168.15.102` cannot access internet service. Because of the problem, I currently use DHCP to continue the development. And, I can find the DHCP IP address of a specific server by accessing the admin page of the router at `192.168.15.1` with username `admin` and password `admin`, <kbd>Status</kbd> --> <kbd>Local Network</kbd> --> <kbd>DHCP Client Table</kbd>.  
 
 3. Finally, we need to execute `sudo service networking restart`. 
 
