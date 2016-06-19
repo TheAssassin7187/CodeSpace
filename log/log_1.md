@@ -1,9 +1,7 @@
 LOG 1 - Setting the Hardware Configuration
-============================
+===========================================
 
-| Tables   |      Are          |  Cool |
-|----------|:-------------: |------:|
-| col 1 is  |  left-aligned | $1600 |
-| col 2 is  |    centered    |   $12 |
-| col 3 is  | right-aligned |    $1 |
-    
+| Attribute |Information       |
+| :-------- | :--------------- |
+| Creator   | Casper LI        |
+| Date      | 19/06/2016 (Sat) |
