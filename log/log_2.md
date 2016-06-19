@@ -25,6 +25,18 @@ Content
 | Starting IP Address           | 192.168.15.100 |
 | Maximum Number of DHCP Users  | 50             |
 
+#### Local Network Informaiton
+
+| Attribute             | Information       |
+| :-------------------- | :---------------- |
+| MAC Address           | 00:14:BF:BF:75:62 |
+| IP Address            | 192.168.15.1      |
+| Subnet Mask           | 255.255.255.0     |
+| DHCP Server           | Enabled           |
+| Starting IP Address   | 192.168.15.100    |
+| End IP Address        | 192.168.15.149    |
+
+____________________________________________________________________________________
 
 ### Connect to the Local Network
 1. `sudo vi /etc/network/interfaces`: Use vi to edit the `interfaces` file.
