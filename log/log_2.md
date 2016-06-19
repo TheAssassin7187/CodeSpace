@@ -37,7 +37,7 @@ ________________________________________________________________________________
 2. `sudo apt-get install slapd ldap-utils`
 3. The password for both `ldap_01` and `ldap_02` are set to be `awe1829`.
 
-
+____________________________________________________________________________________
 
 ### Changing the Hostname 
 
@@ -56,7 +56,7 @@ ________________________________________________________________________________
    1. http://ubuntuhandbook.org/index.php/2014/04/change-hostname-ubuntu1404/
    2. http://askubuntu.com/questions/87665/how-do-i-change-the-hostname-without-a-restart
 
-
+____________________________________________________________________________________
 
 Problem
 1. After change the hostname to "ldap_01.codespace.com    ldap_01" 
@@ -64,6 +64,7 @@ Problem
 P. what is LXD can be found in : http://www.ubuntu.com/cloud/lxd
 it seems only appears on Ubuntu 16.04
 
+____________________________________________________________________________________
 
 Enter the recovery mode
 1. hold "shift"
@@ -74,6 +75,7 @@ Enter the recovery mode
 4. the filesystem is mounted readonly by default. That means that I won't be able to save any changes you make to any files - and also that vim won't be able to write to root's .viminfo file.
 5. type "mount -o remount,rw /"
 
+____________________________________________________________________________________
 
 Problem
 [FAILED] Failed to start lxd-containers.service'
@@ -83,7 +85,7 @@ half Solution (http://askubuntu.com/questions/783363/ubuntu-server-16-04-wont-bo
 3. sudo reboot
 4. problem still exist but can still boot up the server after a long wait.
 
-
+____________________________________________________________________________________
 
 Force quit in vi using '!'
 e.g. 
@@ -95,6 +97,7 @@ e.g.
 Problem
 sometime the vi does not response to any input.
 
+____________________________________________________________________________________
 
 change the host for ldap
 1. sudo vi /etc/hosts
