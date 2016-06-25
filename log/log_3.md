@@ -36,7 +36,7 @@ Content
    * The obsolete LDAPv2 protocol is disabled by default in slapd. Programs and users should upgrade to LDAPv3. If you have old programs which can't use LDAPv3, you should select this option and 'allow bind_v2' will be added to your slapd.conf file.<br/>
      Allow LDAPv2 protocol?<br/>
      **No**
-3. 
+3. `sudo apt-get install phpldapadmin`
 
 ### References
 
