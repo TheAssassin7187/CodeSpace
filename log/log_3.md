@@ -12,5 +12,8 @@ Content
 
 
 ### References
- 1. Fundamentals of LDAP (Part I) <br/>
+
+ 1. Top 4 open source LDAP implementations
+    https://opensource.com/business/14/5/top-4-open-source-ldap-implementations
+ 2. Fundamentals of LDAP (Part I) <br/>
     https://www.youtube.com/watch?v=LVY3WbakcOE
