@@ -9,3 +9,8 @@ LOG 3 -
 
 Content
 -------------------------------------------
+
+
+### References
+ 1. Fundamentals of LDAP (Part I) <br/>
+    https://www.youtube.com/watch?v=LVY3WbakcOE
