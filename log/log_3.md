@@ -27,3 +27,5 @@ Content
     http://stackoverflow.com/questions/38026071/possibility-of-using-ldap-to-form-a-web-server-by-multiple-servers
  8. The benefits of using RADIUS over LDAP <br/>
     https://opensource.com/business/15/4/benefits-using-radius-over-ldap
+ 9. How to Combine Multiple Hard Drives Into One Volume for Cheap, High-Capacity Storage <br/>
+    http://lifehacker.com/5986883/how-to-combine-multiple-hard-drives-into-one-volume-for-cheap-high-capacity-storage
