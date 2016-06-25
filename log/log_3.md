@@ -37,6 +37,7 @@ Content
      Allow LDAPv2 protocol?<br/>
      **No**
 3. `sudo apt-get install phpldapadmin`
+4. apache2 username: casper, password: ask3grh4
 
 ### References
 
