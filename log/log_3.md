@@ -32,10 +32,11 @@ Content
      **No**<hr/>
    * There are still files in `/var/lib/ldap` which will probably break the configuration process. If you enable this option, the maintainer scripts will move to old database files out of the way before creating a new database.<br/>
      Move old database?<br/>
-     **Yes**
+     **Yes**<hr/>
    * The obsolete LDAPv2 protocol is disabled by default in slapd. Programs and users should upgrade to LDAPv3. If you have old programs which can't use LDAPv3, you should select this option and 'allow bind_v2' will be added to your slapd.conf file.<br/>
      Allow LDAPv2 protocol?<br/>
      **No**
+3. 
 
 ### References
 
