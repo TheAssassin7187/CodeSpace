@@ -15,22 +15,27 @@ Content
 2. How I have to answer the questions.
    *  If you enable this option, no initial configuration or database will be created for you.<br/>
       Omit OpenLDAP server configuration? <br/>
-      **No**
+      **No**<hr/>
    * The DNS domain name is used to construct the base DN of the LDAP directory. For example, `foo.example.org` will create the directory with `dc=foo, dc=example, dc=org` as base DN.<br/>
      DNS domain name:<br/>
-     **codespace.com**
+     **codespace.com**<hr/>
    * Please enter the name of the organization to use in the base DNof your LDAP directory.<br/>
      Organization name:<br/>
-     **PolyU**
+     **PolyU**<hr/>
    * Please enter the password for the admin entry in your LDAP directory.(According to reference 3, anything I select here will overwrite the previous password I used.)<br/>
      Administrator password:<br/>
-     **awe1829**
+     **awe1829**<hr/>
    * HDB and BDB use similar storage formats, but HDB adds support for subtree renames. Both support the same confguration options. The MDB backend is recommended. MDB uses a new storage format and requires less configuation than BDB or HDB. In any case, you should review the resulting database configuration for your needs. See `/urs/share/doc/slapd/README.Debian.gz` for more details.<br/>
    Database backend to use:<br/>
-     **HDB**
+     **HDB**<hr/>
    * Do you want the database to be removed when slapd is purged?<br/>
+     **No**<hr/>
+   * There are still files in `/var/lib/ldap` which will probably break the configuration process. If you enable this option, the maintainer scripts will move to old database files out of the way before creating a new database.<br/>
+     Move old database?<br/>
+     **Yes**
+   * The obsolete LDAPv2 protocol is disabled by default in slapd. Programs and users should upgrade to LDAPv3. If you have old programs which can't use LDAPv3, you should select this option and 'allow bind_v2' will be added to your slapd.conf file.<br/>
+     Allow LDAPv2 protocol?<br/>
      **No**
-   * There are still files in
 
 ### References
 
