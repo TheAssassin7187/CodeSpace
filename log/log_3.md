@@ -42,7 +42,13 @@ Content
    * Edit the line: `$servers->setValue('server','base',array('dc=test,dc=com'));`. After the edit, `array('dc=test,dc=com')` becomes `array('dc=codespace,dc=com')`.
    * Edit the line: `$servers->setValue('login','bind_id','cn=admin,dc=test,dc=com');`. After the edit, `cn=admin,dc=test,dc=com` becomes `cn=admin,dc=codespace,dc=com`.
    * Uncomment and edit the line: `$config->custom->appearance['hide_template_warning'] = false;`. After the edit, `false` becomes `true`.
-4. apache2 username: casper, password: ask3grh4
+5. Create an SSL certificate.
+   * `sudo mkdir /etc/apache2/ssl`: make the directory `/etc/apache2/ssl`.
+   * `sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/apache.key -out /etc/apache2/ssl/apache.crt`: create the key and certificate in one movement. When it is finished, the certificate and key is now in `/etc/apache2/ssl` directory.
+6. Create a password anthentication file.
+   * `sudo apt-get install apache2-utils`: install Apache Utility Package.
+   * `sudo htpasswd -c /etc/apache2/htpasswd casper`, where `casper` is the username.
+   * After the process, we have username: `casper`, password: `ask3grh4`.
 
 ### References
 
