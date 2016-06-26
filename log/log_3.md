@@ -49,6 +49,8 @@ Content
    * `sudo apt-get install apache2-utils`: install Apache Utility Package.
    * `sudo htpasswd -c /etc/apache2/htpasswd casper`, where `casper` is the username.
    * After the process, we have username: `casper`, password: `ask3grh4`.
+7. Secure apache
+   * `sudo a2enmod ssl`: Enable the SSL module in Apache
 
 ### References
 
