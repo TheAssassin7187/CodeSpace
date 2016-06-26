@@ -52,18 +52,39 @@ Content
 7. Secure apache
    * `sudo a2enmod ssl`: Enable the SSL module in Apache.
    * `sudo nano /etc/phpldapadmin/apache.conf`: Modify the phpLDAPadmin apache configuration. This is the place where I need to decide on the URL location where I want to access the interface. The default is `/phpldapadmin`, but I want to change this to cut down on random login attempts by bots and malicious parties.
-   * The original one is:
-    ```xml
-        <IfModule mod_alias.c>
-            Alias /phpldapadmin /usr/share/phpldapadmin/htdocs
-        </IfModule>
-    ```
-   * The modified one is:
-    ```xml
-        <IfModule mod_alias.c>
-            Alias /superldap /usr/share/phpldapadmin/htdocs
-        </IfModule>
-    ```
+       * The original one is:
+        ```xml
+            <IfModule mod_alias.c>
+                Alias /phpldapadmin /usr/share/phpldapadmin/htdocs
+            </IfModule>
+        ```
+       * The modified one is:
+        ```xml
+            <IfModule mod_alias.c>
+                Alias /superldap /usr/share/phpldapadmin/htdocs
+            </IfModule>
+        ```
+   * `sudo nano /etc/apache2/sites-enabled/000-default.conf`: Configure the HTTP Virtual Host.
+       * The original one is:
+         ```xml
+            <VirtualHost *:80>
+                ServerAdmin webmaster@localhost
+                DocumentRoot /var/www/html
+                ErrorLog ${APACHE_LOG_DIR}/error.log
+                CustomLog ${APACHE_LOG_DIR}/access.log combined
+            </VirtualHost>
+         ```
+       * The modified one is:
+         ```xml
+            <VirtualHost *:80>
+                ServerAdmin webmaster@server_domain_or_IP
+                DocumentRoot /var/www/html
+                ServerName server_domain_or_IP
+                Redirect permanent /superldap https://server_domain_or_IP/superldap
+                ErrorLog ${APACHE_LOG_DIR}/error.log
+                CustomLog ${APACHE_LOG_DIR}/access.log combined
+            </VirtualHost>
+         ```
 
 ### References
 
