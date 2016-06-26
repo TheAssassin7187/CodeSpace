@@ -115,6 +115,7 @@ Content
         ```
       
       * Finally, save and close the file.
+   * `sudo service apache2 restart`: Restart the apache service.
 
 ### References
 
