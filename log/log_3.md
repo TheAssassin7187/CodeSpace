@@ -11,7 +11,7 @@ Content
 -------------------------------------------
 ### Reconfigure slapd to Select Better Settings
 
-1. `sudo dpkg-reconfigure slapd`
+1. `sudo dpkg-reconfigure slapd`: Reconfiguring slapd.
 2. How I have to answer the questions.
    *  If you enable this option, no initial configuration or database will be created for you.<br/>
       Omit OpenLDAP server configuration? <br/>
@@ -37,6 +37,11 @@ Content
      Allow LDAPv2 protocol?<br/>
      **No**
 3. `sudo apt-get install phpldapadmin`: Install the phpLDAPadmin tool
+4. `sudo nano /etc/phpldapadmin/config.php`: Configure phpLDAPadmin
+   * Edit the line: `$servers->setValue('server','host','server_domain_name_or_IP');`, where `server_domain_name_or_IP` is the domain name of the server. After the edit, `server_domain_name_or_IP` becomes `codespace.com`;
+   * Edit the line: `$servers->setValue('server','base',array('dc=test,dc=com'));`. After the edit, `array('dc=test,dc=com')` becomes `array('dc=codespace,dc=com')`.
+   * Edit the line: `$servers->setValue('login','bind_id','cn=admin,dc=test,dc=com');`. After the edit, `cn=admin,dc=test,dc=com` becomes `cn=admin,dc=codespace,dc=com`.
+   * Uncomment and edit the line: `$config->custom->appearance['hide_template_warning'] = false;`. After the edit, `false` becomes `true`.
 4. apache2 username: casper, password: ask3grh4
 
 ### References
