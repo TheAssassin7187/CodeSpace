@@ -66,6 +66,7 @@ Content
         ```
    * `sudo nano /etc/apache2/sites-enabled/000-default.conf`: Configure the HTTP Virtual Host.
        * The original one is:
+       
          ```xml
             <VirtualHost *:80>
                 ServerAdmin webmaster@localhost
@@ -74,17 +75,20 @@ Content
                 CustomLog ${APACHE_LOG_DIR}/access.log combined
             </VirtualHost>
          ```
+        
        * The modified one is:
+       
          ```xml
             <VirtualHost *:80>
-                ServerAdmin webmaster@server_domain_or_IP
+                ServerAdmin webmaster@ldap_01.codespace.com
                 DocumentRoot /var/www/html
-                ServerName server_domain_or_IP
-                Redirect permanent /superldap https://server_domain_or_IP/superldap
+                ServerName ldap_01.codespace.com
+                Redirect permanent /superldap https://ldap_01.codespace.com/superldap
                 ErrorLog ${APACHE_LOG_DIR}/error.log
                 CustomLog ${APACHE_LOG_DIR}/access.log combined
             </VirtualHost>
          ```
+         
 
 ### References
 
