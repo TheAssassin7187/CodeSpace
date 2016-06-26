@@ -89,6 +89,32 @@ Content
             </VirtualHost>
          ```
          
+   * Configure the HTTPS Virtual Host File. Apache includes a default SSL Virtual Host file. However, it is not enabled by default.
+      * `sudo a2ensite default-ssl.conf`: enable the default SSL virtual host file in apache. This will link the file from the sites-available directory into the sites-enabled directory. We can edit this file now by typing: `sudo nano /etc/apache2/sites-enabled/default-ssl.conf`.
+      * First of all, set the `ServerName` value to my server's domain name or IP address again and change the `ServerAdmin` directive as well:
+      
+        ```shell
+          ServerAdmin webmaster@ldap_01.codespace.com
+          ServerName ldap_01.codespace.com
+        ```
+      * Next, we need to set the SSL certificate directives to point to the key and certificate that we created.
+      
+        ```shell
+          SSLCertificateFile /etc/apache2/ssl/apache.crt
+          SSLCertificateKeyFile /etc/apache2/ssl/apache.key
+        ```
+        
+      * Set up the location block that will implement our password protection for the entire phpLDAPadmin installation.
+        ```xml
+          <Location /superldap>
+              AuthType Basic
+              AuthName "Restricted Files"
+              AuthUserFile /etc/apache2/htpasswd
+              Require valid-user
+          </Location>
+        ```
+      
+      * Finally, save and close the file.
 
 ### References
 
