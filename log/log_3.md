@@ -118,7 +118,10 @@ Content
    * `sudo service apache2 restart`: Restart the apache service.
 
 ### Errors
-After I done the above action and execute the command `sudo service apache2 restart`, an error message occurred.
+After I done the above actions and execute the command `sudo service apache2 restart`, some error messages occurred.
+* `Failed to start Automatically refresh installed snaps.` 
+* `Failed to start LSB: Apache2 web server.`
+* `blk_update_request: I/O error, dev fd0, sector 0`
 
 
 ### References
