@@ -1,4 +1,4 @@
-LOG 3 - 
+LOG 3 - Install and Configure phpLDAPadmin
 ===========================================
 
 | Attribute   | Information      |
