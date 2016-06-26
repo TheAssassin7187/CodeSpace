@@ -117,6 +117,10 @@ Content
       * Finally, save and close the file.
    * `sudo service apache2 restart`: Restart the apache service.
 
+### Errors
+After I done the above action and execute the command `sudo service apache2 restart`, an error message occurred.
+
+
 ### References
 
 1. Top 4 open source LDAP implementations <br/>
