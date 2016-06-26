@@ -5,7 +5,7 @@ LOG 3 - Install and Configure phpLDAPadmin
 | :---------- | :--------------- |
 | Creator     | Casper LI        |
 | Date        | 25/06/2016 (SAT) |
-| Description |  |
+| Description | Install and Configure phpLDAPadmin |
 
 Content
 -------------------------------------------
