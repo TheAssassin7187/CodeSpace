@@ -31,7 +31,7 @@ After watching the video (https://www.youtube.com/watch?v=TPZdK5ViVpw), it seems
     ```
 
   * Then, I tried to access the page `http://192.168.15.1/phpldapadmin` from another computer in the same network but it seems not accessable.
-  * When I tried to restart my apache2 server by using `sudo service apache2 restart`, it gives me the error message like the previous one.
+  * When I tried to restart my apache2 server by using `sudo service apache2 restart`, it gives me the error message like the previous one and the apache2 server cannot be started.
   * Then I purge the phpldapadmin and reinstall it and I meet a new problem about PHP.
   * I finally posted my question on the repository of phpLDAPadmin, github. (Link: https://github.com/leenooks/phpLDAPadmin/issues/38)
 
