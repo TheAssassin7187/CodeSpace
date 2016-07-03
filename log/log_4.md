@@ -11,7 +11,30 @@ Content
 -------------------------------------------
 Previously, I have encountered a problem with installing phpLDAPadmin software and this time is mainly for solving the problem.
 
-After watching the video (https://www.youtube.com/watch?v=TPZdK5ViVpw), it seems that the security setting is not necessary to make phpLDAPadmin work. Therefore, I just by-pass this process and reinstall phpLDAPadmin. But I still meet a problem during the installation and I finally posted my question on the repository of phpLDAPadmin, github. (Link: https://github.com/leenooks/phpLDAPadmin/issues/38)
+After watching the video (https://www.youtube.com/watch?v=TPZdK5ViVpw), it seems that the security setting is not necessary to make phpLDAPadmin work. Therefore, I just by-pass this process and reinstall phpLDAPadmin. 
+
+###Process I have done to follow the video
+ Before I following the video, I just do the following 3 commands to uninstall the software installed previously.
+  * `sudo apt-get purge slapd`
+  * `sudo apt-get purge ldap-utils`
+  * `sudo apt-get purge phpldapadmin`
+ Then, I start following the video.
+  * `sudo apt-get install slapd`, and set the password as if the previous one, **awe1829**.
+  * `sudo apt-get install ldap-utils`
+  * `sudo apt-get install phpldapadmin`
+  * Setting `Base` and `URI` the file `/etc/ldap/ldap.conf` like the following.
+
+    ```
+    BASE    dc=codespace,dc=com
+    URI     ldap://192.168.15.1
+    ```
+
+  * Then, I tried to access the page `http://192.168.15.1/phpldapadmin` from another computer in the same network but it seems not accessable.
+  * When I tried to restart my apache2 server by using `sudo service apache2 restart`, it gives me the error message like the previous one.
+  
+  
+
+But I still meet a problem during the installation and I finally posted my question on the repository of phpLDAPadmin, github. (Link: https://github.com/leenooks/phpLDAPadmin/issues/38)
 
 ###Details about the Error
 ````
@@ -34,7 +57,7 @@ apache2_reload: AH00013: Pre-configuration failed
 ```
 
 ###My Opinion
-I guess that the problem may come from the "unsupportness" of PHP7 of phpLDAPadmin. But PHP7 is defaultly installed in Ubuntu Server 16.04 that I am currently using on the LDAP servers. So maybe I can find a way to uninstall PHP7 and reinstall PHP5 on server ldap_1.
+I guess that the problem may come from the "unsupportness" of PHP7 of phpLDAPadmin. But PHP7 is defaultly installed in Ubuntu Server 16.04 that I am currently using on the LDAP servers. So maybe I can find a way to uninstall PHP7 and reinstall PHP5 on server ldap_1. Another method is that maybe I can solve the problem by recompiling PHP as what the error message told me to do.
 
 References
 ---------------------------------------------
