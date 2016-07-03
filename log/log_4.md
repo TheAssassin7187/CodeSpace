@@ -17,13 +17,13 @@ I guess that the problem may come from the "unsupportness" of PHP7 of phpLDAPadm
 
 References
 ---------------------------------------------
- 1. [Youtube] OpenLDAP: Installation and adding objects using php ldap admin and ldapadd-linux folks
+ 1. [Youtube] OpenLDAP: Installation and adding objects using php ldap admin and ldapadd-linux folks<br/>
     https://www.youtube.com/watch?v=TPZdK5ViVpw
- 2. [Youtube] Creació d'un domini LDAP amb Ubuntu Server 14.4
+ 2. [Youtube] Creació d'un domini LDAP amb Ubuntu Server 14.4<br/>
     https://www.youtube.com/watch?v=SqGgRKXnTFc
- 3. [Youtube] LD01 Instalación servidor Openldap
+ 3. [Youtube] LD01 Instalación servidor Openldap<br/>
  	https://www.youtube.com/watch?v=E0mIYO_vbx8
- 4. [Youtube] Instalacion de LDAP en Centos 6.4 + phpldapadmin - cliente Ubuntu
+ 4. [Youtube] Instalacion de LDAP en Centos 6.4 + phpldapadmin - cliente Ubuntu<br/>
  	https://www.youtube.com/watch?v=7NidxR5ax0M
- 5. [Youtube] OpenLDAP - Installation and adding objects using phpldapadmin and ldapadd
+ 5. [Youtube] OpenLDAP - Installation and adding objects using phpldapadmin and ldapadd<br/>
     https://www.youtube.com/watch?v=DM_UQVVVtoY
