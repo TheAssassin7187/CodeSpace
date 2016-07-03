@@ -72,5 +72,5 @@ References
  	https://www.youtube.com/watch?v=7NidxR5ax0M
  5. [Youtube] OpenLDAP - Installation and adding objects using phpldapadmin and ldapadd<br/>
     https://www.youtube.com/watch?v=DM_UQVVVtoY
- 6. PHP and Apache2 Threadsafe Error
+ 6. PHP and Apache2 Threadsafe Error<br/>
     http://stackoverflow.com/questions/19185268/php-and-apache-thread-safe-error
