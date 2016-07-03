@@ -35,13 +35,13 @@ After watching the video (https://www.youtube.com/watch?v=TPZdK5ViVpw), it seems
   * Then I purge the phpldapadmin and reinstall it and I meet a new problem about PHP.
   * I finally posted my question on the repository of phpLDAPadmin, github. (Link: https://github.com/leenooks/phpLDAPadmin/issues/38)
 
-###Details about the Error
+###Details the Question Post on the Issue Section on phpLDAPadmin, Github
 ````
 Ubuntu Version : 16.04
 PHP Version    : 7.0.4-7ubuntu2.1 (cli) ( NTS )
 ````
 
-After I installed apache2 by using command sudo apt-get install apache2, I have checked that I can access the Apache2 Ubuntu Default Page from another computer in the network. Then, I install phpLDAPadmin by using command sudo apt-get install apache2. It finally shows me the following messages and I can no longer access the page.
+After I installed apache2 by using command `sudo apt-get install apache2`, I have checked that I can access the `Apache2 Ubuntu Default Page` from another computer in the network. Then, I install phpLDAPadmin by using command `sudo apt-get install apache2`. It finally shows me the following messages and I can no longer access the page.
 
 ```
 $ sudo apt-get install phpldapadmin
@@ -78,3 +78,5 @@ References
     http://phpldapadmin.sourceforge.net/
  8. [Github Repository] phpLDAPadmin<br/>
     https://github.com/leenooks/phpLDAPadmin
+ 9. phpLDAPadmin DEMO<br/>
+    http://demo.phpldapadmin.org/RELEASE/htdocs/index.php
