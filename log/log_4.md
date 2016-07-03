@@ -9,11 +9,32 @@ LOG 4 - Solving Problem of phpLDAPadmin Installation Failed
 
 Content
 -------------------------------------------
-Previously, I have encounter a problem with installing phpLDAPadmin software and this time is mainly for solving the problem.
+Previously, I have encountered a problem with installing phpLDAPadmin software and this time is mainly for solving the problem.
 
 After watching the video (https://www.youtube.com/watch?v=TPZdK5ViVpw), it seems that the security setting is not necessary to make phpLDAPadmin work. Therefore, I just by-pass this process and reinstall phpLDAPadmin. But I still meet a problem during the installation and I finally posted my question on the repository of phpLDAPadmin, github. (Link: https://github.com/leenooks/phpLDAPadmin/issues/38)
 
-I guess that the problem may come from the "unsupportness" of PHP7 of phpLDAPadmin. But PHP7 is defaultly installed in Ubuntu Server 16.04 that I am currently using on the LDAP servers.
+###Details about the Error
+````
+Ubuntu Version : 16.04
+PHP Version    : 7.0.4-7ubuntu2.1 (cli) ( NTS )
+````
+
+After I installed apache2 by using command sudo apt-get install apache2, I have checked that I can access the Apache2 Ubuntu Default Page from another computer in the network. Then, I install phpLDAPadmin by using command sudo apt-get install apache2. It finally shows me the following messages and I can no longer access the page.
+
+```
+$ sudo apt-get install phpldapadmin
+...
+Setting up phpldapadmin (1.2.2-5.2ubuntu2) ...
+
+Creating config file /etc/phpldapadmin/config.php with new version
+apache2_invoke: Enable configuration phpldapadmin.conf
+apache2_reload: Your configuration is broken. Not reloading Apache 2
+apache2_reload: [Sat Jul 02 15:37:55.542002 2016] [:crit] [pid 5365:tid 140027748411264] Apache is running a threaded MPM, but your PHP Module is not compiled to be threadsafe. You need to recompile PHP.
+apache2_reload: AH00013: Pre-configuration failed
+```
+
+###My Opinion
+I guess that the problem may come from the "unsupportness" of PHP7 of phpLDAPadmin. But PHP7 is defaultly installed in Ubuntu Server 16.04 that I am currently using on the LDAP servers. So maybe I can find a way to uninstall PHP7 and reinstall PHP5 on server ldap_1.
 
 References
 ---------------------------------------------
