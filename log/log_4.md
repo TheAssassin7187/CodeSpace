@@ -18,6 +18,7 @@ After watching the video (https://www.youtube.com/watch?v=TPZdK5ViVpw), it seems
   * `sudo apt-get purge slapd`
   * `sudo apt-get purge ldap-utils`
   * `sudo apt-get purge phpldapadmin`
+ 
  Then, I start following the video.
   * `sudo apt-get install slapd`, and set the password as if the previous one, **awe1829**.
   * `sudo apt-get install ldap-utils`
