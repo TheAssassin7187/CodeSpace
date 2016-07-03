@@ -55,6 +55,8 @@ apache2_reload: [Sat Jul 02 15:37:55.542002 2016] [:crit] [pid 5365:tid 14002774
 apache2_reload: AH00013: Pre-configuration failed
 ```
 
+[6]
+
 ###My Opinion
 I guess that the problem may come from the "unsupportness" of PHP7 of phpLDAPadmin. But PHP7 is defaultly installed in Ubuntu Server 16.04 that I am currently using on the LDAP servers. So maybe I can find a way to uninstall PHP7 and reinstall PHP5 on server ldap_1. Another method is that maybe I can solve the problem by recompiling PHP as what the error message told me to do. By the way, I can continue my work without phpLDAPadmin which is only a user-friendly interface for easier configuring openLDAP but thing may become more complicated.
 
@@ -70,3 +72,5 @@ References
  	https://www.youtube.com/watch?v=7NidxR5ax0M
  5. [Youtube] OpenLDAP - Installation and adding objects using phpldapadmin and ldapadd<br/>
     https://www.youtube.com/watch?v=DM_UQVVVtoY
+ 6. PHP and Apache2 Threadsafe Error
+    http://stackoverflow.com/questions/19185268/php-and-apache-thread-safe-error
