@@ -74,3 +74,7 @@ References
     https://www.youtube.com/watch?v=DM_UQVVVtoY
  6. PHP and Apache2 Threadsafe Error<br/>
     http://stackoverflow.com/questions/19185268/php-and-apache-thread-safe-error
+ 7. Officical Website of phpLDAPadmin<br/>
+    http://phpldapadmin.sourceforge.net/
+ 8. [Github Repository] phpLDAPadmin<br/>
+    https://github.com/leenooks/phpLDAPadmin
